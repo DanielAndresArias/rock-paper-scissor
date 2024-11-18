@@ -1,12 +1,9 @@
 import './App.css'
-import Section from './components/Section/Section'
+import { Game } from './components'
 
 function App() {
   return (
-    <>
-      <Section/>
-      <main>TEST</main>
-    </>
+    <Game />
   )
 }
 

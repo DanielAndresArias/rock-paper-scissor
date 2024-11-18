@@ -1,0 +1,6 @@
+.game {
+  overflow: auto;
+  height: 100vh;
+  background: $bg-radial;
+  background: radial-gradient(at 50% 0%, $bg-radial 40%, $bg-radial-shadow 80%);
+}
