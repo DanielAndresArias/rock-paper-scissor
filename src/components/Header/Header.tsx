@@ -1,10 +1,11 @@
 import styles from './Header.module.scss'
+import iconSVG from '../../assets/logo.svg'
 
 export const Header = () => {
   return (
     <header className={styles['header']}>
       <section className={styles['header-content']}>
-        <h1 className={styles['name']}>ROCK PAPER SCISSOR</h1>
+        <img src={iconSVG} className={styles['icon-name']}/>
         <div className={styles['score']}>
           <h2 className={styles['title']}>SCORE</h2>
           <span className={styles['points']}>12</span>
