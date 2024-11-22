@@ -1,8 +1,17 @@
 import styles from './Rule.module.scss'
 
-const Rule = () => {
+interface Rule {
+  name: string,
+  src: string,
+}
+
+export const Rule = ({ name, src }: Rule) => {
   return (
-    <div><h1 className={styles['color-blue']}>PROBANDO SCSS</h1></div>
+    <div className={`${styles['rule']} ${styles[name]}`}>
+      <div className={styles['rule-background']}>
+        <img src={src} className={styles['icon']}/>
+      </div>
+    </div>
   )
 }
 

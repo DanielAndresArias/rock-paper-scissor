@@ -1,0 +1,21 @@
+.rule-selector {
+  position: relative;
+  .rule-selector-content {
+    display: flex;
+    margin: $section-margin auto;
+    max-width: 500px;
+    gap: 70px 100px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .bg-triangle {
+    width: 260px;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    margin: 68px auto;
+  }
+}
