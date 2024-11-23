@@ -1,8 +1,9 @@
 .rule-selector {
   position: relative;
+  margin: $section-margin 0;
   .rule-selector-content {
     display: flex;
-    margin: $section-margin auto;
+    margin: 0 auto;
     max-width: 500px;
     gap: 70px 100px;
     width: 100%;
@@ -17,5 +18,46 @@
     bottom: 0;
     position: absolute;
     margin: 68px auto;
+  }
+  .rule-selected {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    justify-content: space-around;
+    align-items: center;
+    .picked {
+      .title {
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-size: 18px;
+        text-align: center;
+        color: $white;
+        margin-bottom: $gap-x9;
+      }
+    }
+    .result {
+      h4 {
+        text-transform: uppercase;
+        font-size: 44px;
+        text-align: center;
+        color: $white;
+        margin-bottom: $gap-x4;
+      }
+      button {
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: $bg-radial;
+        background-color: $white;
+        padding: $gap-x3 $gap-x12;
+        outline: none;
+        border: transparent;
+        border-radius: 8px;
+        &:active {
+          color: $rock-bg;
+        }
+      }
+    }
   }
 }

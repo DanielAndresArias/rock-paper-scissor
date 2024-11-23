@@ -27,11 +27,32 @@
     .icon {
       width: 45px;
     }
+    &.empty {
+      background-color: $bg-radial-shadow;
+      opacity: 0.2;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+    }
   }
-
-  
   &:hover {
     transform: scale(1.1);
+  }
+  &.selected {
+    width: 140px*1.5;
+    height: 140px*1.5;
+    transition: none;
+    cursor: auto;
+    .rule-background {
+      width: 110px*1.5;
+      height: 110px*1.5;
+      .icon {
+        width: 45px*1.5;
+      }
+    }
+    &:hover {
+      transform: none;
+    }
   }
 }
 
